@@ -1,0 +1,83 @@
+{
+  "directions": [
+    {
+      "fonts": {
+        "heading": {
+          "family": "Cormorant Garamond",
+          "fallback": "Georgia, serif"
+        },
+        "body": {
+          "family": "Jost",
+          "fallback": "sans-serif"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+      },
+      "palette": {
+        "accent": "#C9A27E",
+        "text": "#2E2626",
+        "bg": "#FAF6F2",
+        "muted": "#6B5F5C",
+        "primary": "#8E4A5A",
+        "secondary": "#6E3644",
+        "surface": "#F1E6DF"
+      },
+      "slug": "szemelyes-torodes",
+      "id": 1,
+      "name": "Személyes törődés",
+      "description": "Eliza személyére és a bizalomra épülő, portréval nyitó főoldal."
+    },
+    {
+      "fonts": {
+        "heading": {
+          "family": "Cormorant Garamond",
+          "fallback": "Georgia, serif"
+        },
+        "body": {
+          "family": "Jost",
+          "fallback": "sans-serif"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+      },
+      "palette": {
+        "accent": "#C9A27E",
+        "text": "#2E2626",
+        "bg": "#FAF6F2",
+        "muted": "#6B5F5C",
+        "primary": "#8E4A5A",
+        "secondary": "#6E3644",
+        "surface": "#F1E6DF"
+      },
+      "slug": "egy-ora-magadra",
+      "id": 2,
+      "name": "Egy óra magadra",
+      "description": "Nyugodt kezelési élmény, nagy fotók és levegős elrendezés."
+    },
+    {
+      "fonts": {
+        "heading": {
+          "family": "Cormorant Garamond",
+          "fallback": "Georgia, serif"
+        },
+        "body": {
+          "family": "Jost",
+          "fallback": "sans-serif"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+      },
+      "palette": {
+        "accent": "#C9A27E",
+        "text": "#2E2626",
+        "bg": "#FAF6F2",
+        "muted": "#6B5F5C",
+        "primary": "#8E4A5A",
+        "secondary": "#6E3644",
+        "surface": "#F1E6DF"
+      },
+      "slug": "a-borodre-hangolva",
+      "id": 3,
+      "name": "A bőrödre hangolva",
+      "description": "Áttekinthető kezelési lehetőségek, személyre szabott törődés."
+    }
+  ],
+  "total": 3
+}
