@@ -14,7 +14,7 @@ export function refinePage(html, file) {
     html = html.replaceAll('href="#idopont"', 'href="kapcsolat.html#idopont"');
     html = html.replace('class="section powder"', 'class="section powder needs-section"');
     html = html.replace('class="section powder needs-section"><div class="wrap">', 'class="section powder needs-section"><div class="wrap needs-layout">');
-    html = html.replace('amire most szükséged van.</p></div><div class="needs-grid">', 'amire most szükséged van.</p></div><img class="needs-illustration" src="assets/images/pumpas-kozmetikum-levelekkel.webp" width="600" height="600" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="needs-grid">');
+    html = html.replace('amire most szükséged van.</p></div><div class="needs-grid">', 'amire most szükséged van.</p></div><img class="needs-illustration" src="assets/images/orchidea-vonalrajz.webp" width="600" height="540" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="needs-grid">');
     html = html.replace('class="section wrap"><div class="section-lead"><p class="kicker">A bőröd hálás', 'class="section wrap results-section"><div class="section-lead"><p class="kicker">A bőröd hálás');
     html = html.replace('<div class="b-guarantee"><h3>Elégedettségi garancia</h3><p>', '<div class="b-guarantee package-guarantee"><div class="guarantee-heading"><svg viewBox="0 0 40 44" fill="none" aria-hidden="true"><path d="M20 3 35 9v12c0 10-15 19-15 19S5 31 5 21V9L20 3Z" stroke="currentColor" stroke-width="1.5"/><path d="m12 21 6 6 11-13" stroke="currentColor" stroke-width="1.5"/></svg><h3>Elégedettségi garancia</h3></div><p>');
     html = html.replace('visszatérítem a díj 50%-át.</p></div>', 'visszatérítem a díj <strong>50%-át.</strong></p></div>');
