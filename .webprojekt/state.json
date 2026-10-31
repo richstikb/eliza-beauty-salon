@@ -1,1 +1,9 @@
-{"phase":"directions_proposed","direction_count":3,"is_redesign":false,"source_url":null,"brand_locked":true,"image_optimization":"deferred","portrait":"képek/02_Portrek/mosolygo-szoke-no-turkiz-felsoben-asztalnal.jpg"}
+{
+  "phase": "prototypes_complete",
+  "direction_count": 3,
+  "is_redesign": false,
+  "source_url": null,
+  "brand_locked": true,
+  "image_optimization": "deferred",
+  "portrait": "képek/02_Portrek/mosolygo-szoke-no-turkiz-felsoben-asztalnal.jpg"
+}
