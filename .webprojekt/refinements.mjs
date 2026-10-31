@@ -1,5 +1,6 @@
 export function refinePage(html, file) {
   if (file === 'index.html' || file === 'kezelesek.html') {
+    html = html.replace(/Figyelem a bőröd(?:<br>| )változó igényeire\.?/g, 'Fiatalosabb megjelenés, természetes hatás');
     html = html.replace('Sipos Eliza vagyok. Személyre szabott kezelésekkel és otthoni bőrápolási tanácsokkal segítek megtalálni a bőrödnek megfelelő törődést.', 'Sipos Eliza vagyok. Segítek kiválasztani a bőrödnek megfelelő kezelést, és tanácsot adok az otthoni bőrápoláshoz is.');
     html = html.replace(/Újra egyensúlyban(?:<br>| )a bőröd\.?/g, 'Ápolás a bőröd igényei szerint');
     html = html.replace('Célzott arcfiatalító kezelések, gondosan kiválasztott hatóanyagokkal. Arckezelés, illetve arc-nyak-dekoltázs kezelés a személyes kezelési terved részeként.', 'Célzott arcfiatalító kezelések, gondosan kiválasztott hatóanyagokkal. A bőröd állapota alapján együtt választjuk ki, hogy arckezelésre vagy az arc, a nyak és a dekoltázs együttes ápolására van szükséged.');
