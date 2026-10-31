@@ -77,7 +77,20 @@
       "id": 3,
       "name": "A bőrödre hangolva",
       "description": "Áttekinthető kezelési lehetőségek, személyre szabott törődés."
+    },
+    {
+      "id": 4,
+      "name": "Személyes egyensúly",
+      "file": "koncepcio-4-szemelyes-egyensuly.html"
+    },
+    {
+      "id": 5,
+      "name": "Nyugodt gondoskodás",
+      "file": "koncepcio-5-nyugodt-gondoskodas.html",
+      "selected": true
     }
   ],
-  "total": 3
+  "total": 3,
+  "selected_direction": 5,
+  "archive_entrypoint": "koncepciok.html"
 }

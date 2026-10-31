@@ -1,9 +1,20 @@
 {
-  "phase": "prototypes_complete",
-  "direction_count": 3,
+  "phase": "inner_pages_complete",
+  "direction_count": 5,
   "is_redesign": false,
   "source_url": null,
   "brand_locked": true,
   "image_optimization": "deferred",
-  "portrait": "képek/02_Portrek/mosolygo-szoke-no-turkiz-felsoben-asztalnal.jpg"
+  "portrait": "képek/02_Portrek/mosolygo-szoke-no-turkiz-felsoben-asztalnal.jpg",
+  "selected_direction": 5,
+  "selected_name": "Nyugodt gondoskodás",
+  "active_entrypoint": "index.html",
+  "pages": [
+    "index.html",
+    "kezelesek.html",
+    "rolunk.html",
+    "kapcsolat.html",
+    "adatkezeles.html"
+  ],
+  "forms": "demo_only"
 }

@@ -46,3 +46,7 @@ A felhasználó engedélyével a fiktív projektben a véleményekhez is társí
 - Eliza türkiz felsős, asztalnál ülő portréja kizárólag Eliza bemutatására használható, vendégvéleményhez nem.
 A hozzárendelés a fiktív projekt szereposztása, nem a képen szereplő személyek valós azonosítása. A képek kisebb, 64–80 px-es, 16 px lekerekítésű portréként jelenjenek meg a vélemény mellett. A kivágás CSS-sel történjen, arcra igazítva; az eredeti képfájlok és az idézetek változatlanok maradnak. Optimalizálás később.
 
+
+
+## Végleges irányválasztás — 2026. október 31.
+A felhasználó az 5. Nyugodt gondoskodás koncepciót választotta. Minden további fejlesztés kizárólag ebből indul ki. Az index.html az aktív főoldal; elkészült a Kezelések, Rólunk és Kapcsolat aloldal közös eliza.css és eliza.js állományokkal. Az adatkezelési oldal a hiányzó végleges tájékoztatót jelzi. Az űrlapok bemutatók, a Kisokos nincs bekötve. Képoptimalizálás továbbra sincs. Korábbi változatok: koncepciok.html.
