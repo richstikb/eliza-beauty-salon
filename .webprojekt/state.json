@@ -4,7 +4,7 @@
   "is_redesign": false,
   "source_url": null,
   "brand_locked": true,
-  "image_optimization": "deferred",
+  "image_optimization": "webp_responsive_complete",
   "portrait": "képek/02_Portrek/mosolygo-szoke-no-turkiz-felsoben-asztalnal.jpg",
   "selected_direction": 5,
   "selected_name": "Nyugodt gondoskodás",

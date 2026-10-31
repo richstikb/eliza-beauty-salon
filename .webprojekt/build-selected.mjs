@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { webpMarkup } from './webp-markup.mjs';
 const source=fs.readFileSync('koncepcio-5-nyugodt-gondoskodas.html','utf8');
 const sections=[...source.matchAll(/<section\b[\s\S]*?<\/section>/g)].map(m=>m[0]);
 if(sections.length!==9)throw Error('Expected nine selected sections');
@@ -21,7 +22,7 @@ function page(file,title,description,body,cls=''){
  let h=header.replace(`href="${file}">${title==='Főoldal'?'Főoldal':title}`,`href="${file}" aria-current="page">${title==='Főoldal'?'Főoldal':title}`);
  if(file==='adatkezeles.html')h=h.replaceAll('href="#idopont"','href="kapcsolat.html#idopont"');
  const html='<!doctype html><html lang="hu"><head>'+meta.replace('__TITLE__',title).replace('__DESC__',description)+'<link rel="stylesheet" href="eliza.css"><script src="eliza.js" defer></script></head><body id="fooldal" class="'+cls+'"><a class="skip" href="#tartalom">Ugrás a tartalomhoz</a>'+h+'<main id="tartalom">'+links(body)+'</main>'+footer+'</body></html>';
- fs.writeFileSync(file,html);
+ fs.writeFileSync(file,webpMarkup(html));
 }
 const crumb=name=>`<div class="wrap breadcrumbs"><a href="index.html">Főoldal</a> / ${name}</div>`;
 const photo=(p,alt)=>`<img src="képek/${p}" alt="${alt}" loading="lazy">`;

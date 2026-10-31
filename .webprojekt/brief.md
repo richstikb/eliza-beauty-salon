@@ -50,3 +50,7 @@ A hozzárendelés a fiktív projekt szereposztása, nem a képen szereplő szem�
 
 ## Végleges irányválasztás — 2026. október 31.
 A felhasználó az 5. Nyugodt gondoskodás koncepciót választotta. Minden további fejlesztés kizárólag ebből indul ki. Az index.html az aktív főoldal; elkészült a Kezelések, Rólunk és Kapcsolat aloldal közös eliza.css és eliza.js állományokkal. Az adatkezelési oldal a hiányzó végleges tájékoztatót jelzi. Az űrlapok bemutatók, a Kisokos nincs bekötve. Képoptimalizálás továbbra sincs. Korábbi változatok: koncepciok.html.
+
+## Képoptimalizálás — 2026. október 31.
+A felhasználó engedélyezte és kérte az optimalizálást. Az aktív 5. koncepció főoldala és aloldalai WebP-fotókat használnak (8 kép, 20 méretváltozat); az SVG-logók és az eredeti képállományok megmaradnak. Ez felülírja a korábbi halasztást.
+

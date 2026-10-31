@@ -1,0 +1,170 @@
+{
+  "képek/01_Kezelesek/arckezeles-vilagos-szalonban-fekvo.jpg": {
+    "original_bytes": 3005872,
+    "avatar": false,
+    "variants": [
+      {
+        "src": "assets/images/arckezeles-vilagos-szalonban-fekvo-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 13914
+      },
+      {
+        "src": "assets/images/arckezeles-vilagos-szalonban-fekvo-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 26680
+      },
+      {
+        "src": "assets/images/arckezeles-vilagos-szalonban-fekvo-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 46272
+      }
+    ]
+  },
+  "képek/01_Kezelesek/arcmasszazs-feher-ruhas-kezelovel.jpg": {
+    "original_bytes": 2132298,
+    "avatar": false,
+    "variants": [
+      {
+        "src": "assets/images/arcmasszazs-feher-ruhas-kezelovel-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 22588
+      },
+      {
+        "src": "assets/images/arcmasszazs-feher-ruhas-kezelovel-800.webp",
+        "width": 800,
+        "height": 1200,
+        "bytes": 46354
+      },
+      {
+        "src": "assets/images/arcmasszazs-feher-ruhas-kezelovel-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "bytes": 90430
+      }
+    ]
+  },
+  "képek/01_Kezelesek/arcpakolas-felvitele-ecsettel.jpg": {
+    "original_bytes": 586728,
+    "avatar": false,
+    "variants": [
+      {
+        "src": "assets/images/arcpakolas-felvitele-ecsettel-480.webp",
+        "width": 480,
+        "height": 719,
+        "bytes": 20558
+      },
+      {
+        "src": "assets/images/arcpakolas-felvitele-ecsettel-800.webp",
+        "width": 800,
+        "height": 1199,
+        "bytes": 44372
+      },
+      {
+        "src": "assets/images/arcpakolas-felvitele-ecsettel-1200.webp",
+        "width": 1200,
+        "height": 1798,
+        "bytes": 85892
+      }
+    ]
+  },
+  "képek/02_Portrek/mosolygo-hosszu-haju-no-rozsaszin-felsoben-kisfelbontasu.png": {
+    "original_bytes": 239752,
+    "avatar": true,
+    "variants": [
+      {
+        "src": "assets/images/mosolygo-hosszu-haju-no-rozsaszin-felsoben-kisfelbontasu-128.webp",
+        "width": 128,
+        "height": 192,
+        "bytes": 3004
+      }
+    ]
+  },
+  "képek/02_Portrek/mosolygo-rovid-barna-haju-no-kisfelbontasu.png": {
+    "original_bytes": 792202,
+    "avatar": true,
+    "variants": [
+      {
+        "src": "assets/images/mosolygo-rovid-barna-haju-no-kisfelbontasu-128.webp",
+        "width": 128,
+        "height": 85,
+        "bytes": 2546
+      }
+    ]
+  },
+  "képek/02_Portrek/mosolygo-szoke-no-turkiz-felsoben-asztalnal.jpg": {
+    "original_bytes": 1126013,
+    "avatar": false,
+    "variants": [
+      {
+        "src": "assets/images/mosolygo-szoke-no-turkiz-felsoben-asztalnal-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 36356
+      },
+      {
+        "src": "assets/images/mosolygo-szoke-no-turkiz-felsoben-asztalnal-800.webp",
+        "width": 800,
+        "height": 1200,
+        "bytes": 83316
+      },
+      {
+        "src": "assets/images/mosolygo-szoke-no-turkiz-felsoben-asztalnal-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "bytes": 198602
+      }
+    ]
+  },
+  "képek/03_Termekek_es_spa_hangulat/szerum-felvitele-kezfejre-arcmasszirozo-mellett.jpg": {
+    "original_bytes": 1682449,
+    "avatar": false,
+    "variants": [
+      {
+        "src": "assets/images/szerum-felvitele-kezfejre-arcmasszirozo-mellett-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 17020
+      },
+      {
+        "src": "assets/images/szerum-felvitele-kezfejre-arcmasszirozo-mellett-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 35744
+      },
+      {
+        "src": "assets/images/szerum-felvitele-kezfejre-arcmasszirozo-mellett-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 64874
+      }
+    ]
+  },
+  "képek/07_Szalonbelsok/vilagos-szalon-recepcio-csillarral.jpg": {
+    "original_bytes": 1526577,
+    "avatar": false,
+    "variants": [
+      {
+        "src": "assets/images/vilagos-szalon-recepcio-csillarral-480.webp",
+        "width": 480,
+        "height": 728,
+        "bytes": 24996
+      },
+      {
+        "src": "assets/images/vilagos-szalon-recepcio-csillarral-800.webp",
+        "width": 800,
+        "height": 1214,
+        "bytes": 49422
+      },
+      {
+        "src": "assets/images/vilagos-szalon-recepcio-csillarral-1200.webp",
+        "width": 1200,
+        "height": 1821,
+        "bytes": 83418
+      }
+    ]
+  }
+}

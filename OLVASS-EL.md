@@ -10,7 +10,7 @@ A kiválasztott és egyetlen aktív irány az 5. koncepció. Nyisd meg az index.
 
 Közös arculat: eliza.css; működés: eliza.js. A Google Fonts betűihez internetkapcsolat szükséges. A menü oldalakat kapcsol össze; mobilon nyitható és Escape-pel bezárható. A csomagválasztás előtölti az időpontkérő üzenetét.
 
-Az űrlapok bemutatók, nem küldenek adatot. A Kisokos letöltése és a végleges adatkezelési tájékoztató későbbi feladat. A 62 eredeti kép változatlan; optimalizálás nem történt.
+Az űrlapok bemutatók, nem küldenek adatot. A Kisokos letöltése és a végleges adatkezelési tájékoztató későbbi feladat. A 62 eredeti kép változatlan. Az aktív oldalak 8 fényképe optimalizált WebP formátumot használ, reszponzív méretekkel (assets/images/). A logók megmaradnak éles, vektoros SVG formátumban.
 
 Korábbi koncepciók: koncepciok.html. Az eredeti három változat megmaradt; a 4. és 5. összehangolt főoldal is külön fájlban megtekinthető.
 
@@ -19,3 +19,5 @@ Ellenőrzés: helyi fájlok és hivatkozások, egyedi azonosítók, oldalanként
 Helyi előnézet: node .webprojekt/preview.mjs, majd http://127.0.0.1:4173.
 
 Az aktív oldalak újraépítése: node .webprojekt/build-selected.mjs. A generátor az 5. koncepció szakaszait és közös arculatát használja.
+
+Képoptimalizálás: .webprojekt/optimize-images.py (Pillow/WebP), majd node .webprojekt/build-selected.mjs. A forrás–WebP megfeleltetés és méretek: .webprojekt/image-manifest.json. A 8 egyedi kép összmérete 11 091 891 bájtról 575 038 bájtra csökkent a legnagyobb WebP-változatokkal számolva (94,8%). Az archivált koncepciók változatlanok.
