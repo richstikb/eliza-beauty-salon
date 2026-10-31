@@ -22,6 +22,11 @@
 .t-treatments .t-section-title:after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:160px;height:1px;background:var(--gold)}
 .t-treatments .t-section-title:before{content:"";position:absolute;bottom:-4px;left:50%;width:8px;height:8px;transform:translateX(-50%) rotate(45deg);background:var(--powder);border:1px solid var(--gold);z-index:1}
 .needs-section .section-lead{max-width:760px;background:var(--cream);border-left:2px solid var(--gold);border-radius:0 16px 16px 0;padding:32px 40px;margin-bottom:48px}
+.needs-layout{display:grid;grid-template-columns:minmax(0,760px) minmax(0,1fr);column-gap:48px;row-gap:48px;align-items:center}
+.needs-layout .section-lead{margin-bottom:0}
+.needs-layout>.needs-grid{grid-column:1/-1}
+.needs-illustration{width:280px;height:280px;max-width:100%;object-fit:contain;justify-self:center;opacity:.4;mix-blend-mode:multiply}
+@media(max-width:1000px){.needs-layout{display:block}.needs-layout .section-lead{margin-bottom:48px}.needs-illustration{display:none}}
 .results-section{border-top:1px solid var(--gold);padding-top:64px;padding-bottom:64px;position:relative}
 .results-section:before{content:"";position:absolute;top:0;left:0;width:80px;height:3px;background:var(--rose)}
 .results-section .needs-grid{padding:32px 40px;background:var(--powder);border-radius:16px}
@@ -51,7 +56,9 @@
 .compact-steps li>span{font:500 28px 'Cormorant Garamond',Georgia,serif;color:var(--rose)}
 .compact-steps h3{font-size:28px}.compact-steps p{font-size:16px;color:var(--muted);margin-top:12px}
 .contact-page .closing{padding-bottom:40px}
-.contact-page .closing + .section{padding-top:40px;padding-bottom:64px;border-top:1px solid var(--line)}
+.contact-page .closing + .section{padding-top:40px;padding-bottom:64px;border-top:0;position:relative}
+.contact-page .closing + .section:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:160px;height:1px;background:var(--gold)}
+.contact-page .closing + .section:after{content:"";position:absolute;top:-4px;left:50%;width:8px;height:8px;transform:translateX(-50%) rotate(45deg);background:var(--cream);border:1px solid var(--gold)}
 .location-section{background:var(--powder);padding-top:64px;padding-bottom:64px}
 .location-grid{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:64px}
 .location-copy>p:not(.kicker){color:var(--muted);margin-top:24px}
