@@ -21,3 +21,5 @@ Helyi előnézet: node .webprojekt/preview.mjs, majd http://127.0.0.1:4173.
 Az aktív oldalak újraépítése: node .webprojekt/build-selected.mjs. A generátor az 5. koncepció szakaszait és közös arculatát használja.
 
 Képoptimalizálás: .webprojekt/optimize-images.py (Pillow/WebP), majd node .webprojekt/build-selected.mjs. A forrás–WebP megfeleltetés és méretek: .webprojekt/image-manifest.json. A 8 egyedi kép összmérete 11 091 891 bájtról 575 038 bájtra csökkent a legnagyobb WebP-változatokkal számolva (94,8%). Az archivált koncepciók változatlanok.
+
+2026. október 31. – A nyolc böngészős megjegyzés alapján finomított szakaszelválasztók, kezelési bevezető, eredményblokk, kiemelt garancia, történeti elrendezés, növényi vonalrajz, rövidebb űrlap–GYIK térköz és Google Maps térkép útvonaltervezéssel. A térkép internetkapcsolatot használ. A változtatások forrása: .webprojekt/refinements.mjs és .webprojekt/refinements.css; a közös generátor ezeket is alkalmazza. Ellenőrizve 1280, 484 és 375 px szélességen.
