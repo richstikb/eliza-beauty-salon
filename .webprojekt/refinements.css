@@ -64,3 +64,8 @@
  .contact-page .closing{padding-bottom:32px}.contact-page .closing + .section{padding-top:32px;padding-bottom:48px}
  .location-section{padding-top:48px;padding-bottom:48px}.location-grid{grid-template-columns:1fr;gap:32px}.map-frame iframe{height:300px}
 }
+.privacy-document a:not(.button){color:var(--rose);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.privacy-toc{display:flex;flex-wrap:wrap;gap:12px 24px;padding:24px 0;border-bottom:1px solid var(--line);font-size:15px}
+.privacy-document h3{margin:24px 0 16px;font-size:26px}
+.privacy-document .draft-note p:last-child{margin-bottom:0}
+.form-context{font-size:14px!important;line-height:1.5}

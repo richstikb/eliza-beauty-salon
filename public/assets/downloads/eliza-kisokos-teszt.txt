@@ -1,0 +1,7 @@
+ELIZA – ARCÁPOLÁSI KISOKOS
+Tanulmányi tesztanyag
+
+Szánj ma egy nyugodt percet önmagadra — ez az Eliza Arcápolási Kisokos tesztmondata.
+
+Ez a fájl a weboldal letöltési funkciójának kipróbálására készült.
+Nem szakmai arcápolási útmutató. A letöltés nem hírlevél-feliratkozás.

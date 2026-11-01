@@ -20,13 +20,13 @@ while (pending.length) {
   if (!fs.existsSync(dest)) throw Error(`Missing page: ${relative}`);
   if (!/\.(html|css)$/.test(relative)) continue;
   const text = fs.readFileSync(dest, 'utf8');
-  const refs = [...text.matchAll(/(?:src|href)=["']([^"']+)["']/g)].map(m => m[1]);
+  const refs = [...text.matchAll(/(?:src|href|action)=["']([^"']+)["']/g)].map(m => m[1]);
   for (const m of text.matchAll(/srcset=["']([^"']+)["']/g)) refs.push(...m[1].split(',').map(s => s.trim().split(/\s+/)[0]));
   for (const m of text.matchAll(/url\(\s*["']?([^\s)'"\s]+)["']?\s*\)/g)) refs.push(m[1]);
   for (const ref of refs) {
     if (/^(?:[a-z]+:|\/\/|#)/i.test(ref)) continue;
     const clean = decodeURIComponent(ref.split(/[?#]/)[0]);
-    if (clean) pending.push(path.posix.normalize(path.posix.join(path.posix.dirname(relative), clean)));
+    if (clean) pending.push(path.posix.normalize(clean.startsWith('/') ? clean.slice(1) : path.posix.join(path.posix.dirname(relative), clean)));
   }
 }
 console.log(`Public: ${seen.size} referenced files verified.`);

@@ -1,3 +1,5 @@
+import { privacyVersion } from './privacy-content.mjs';
+
 export function refinePage(html, file) {
   if (file === 'index.html' || file === 'kezelesek.html') {
     html = html.replace(/Figyelem a bőröd(?:<br>| )változó igényeire\.?/g, 'Fiatalosabb megjelenés, természetes hatás');
@@ -32,5 +34,15 @@ export function refinePage(html, file) {
     html = html.replace('</main>', `<section class="section location-section" aria-labelledby="location-title"><div class="wrap location-grid"><div class="location-copy"><p class="kicker">Itt találkozunk</p><h2 id="location-title">Egy kis nyugalom<br>a város szívében.</h2><p class="location-address">Eliza Beauty Salon<br><strong>1092 Budapest, Ráday u. 1.</strong></p><p>Hétfőtől péntekig 9:00–16:00.<br>Kizárólag előre egyeztetett időpontban.</p><a class="button secondary" href="https://www.google.com/maps/dir/?api=1&amp;destination=1092+Budapest,+R%C3%A1day+utca+1" target="_blank" rel="noopener noreferrer">Útvonaltervezés</a></div><div class="map-frame"><iframe title="A szalon címe a térképen: Budapest, Ráday utca 1." src="https://maps.google.com/maps?q=1092%20Budapest%20R%C3%A1day%20utca%201&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><p>1092 Budapest, Ráday u. 1. <span>Előre egyeztetett időpontban várlak.</span></p></div></div></section></main>`);
   }
   if (file === 'adatkezeles.html') html = html.replace('<h2>Az élesítés előtt elkészítendő</h2>', '<h2>Térkép</h2><p>A Kapcsolat oldalon Google Maps térkép segíti a tájékozódást. A térkép betöltésekor a böngésző kapcsolatot létesít a Google szolgáltatásával.</p><h2>Az élesítés előtt elkészítendő</h2>');
+  if (file === 'kapcsolat.html') {
+    html = html.replace('name="privacy-acknowledged"', 'name="privacy-consent"');
+    html = html.replace('Elolvastam az <a class="policy" href="adatkezeles.html">adatkezelési tájékoztatót</a>.', 'Elolvastam az <a class="policy" href="adatkezeles.html" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>, és hozzájárulok adataim kezeléséhez a tesztmegkeresés fogadása és megválaszolása céljából, legfeljebb 30 napig.');
+    html = html.replace('<form data-kind="booking"', '<p class="form-context">Tanulmányi tesztűrlap, nem valódi időpontfoglalás. Ne adj meg egészségügyi adatot.</p><form data-kind="booking"');
+    html = html.replace('<input type="hidden" name="form-name" value="kapcsolat">', `<input type="hidden" name="form-name" value="kapcsolat"><input type="hidden" name="privacy-version" value="${privacyVersion}">`);
+  }
+  if (file === 'index.html') {
+    html = html.replace('Iratkozz fel a hírlevélre, és töltsd le az ingyenes Kisokost, tele praktikus tippekkel és szakértői tanácsokkal.', 'Próbáld ki a Kisokos igénylését! A tesztanyag a beküldés után azonnal letölthető. Nem küldünk hírlevelet vagy automatikus e-mailt.');
+    html = html.replace(/<form data-kind="newsletter">[\s\S]*?<\/form>/, `<form data-kind="download" name="kisokos" method="POST" action="/kisokos-letoltes.html" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="kisokos"><input type="hidden" name="privacy-version" value="${privacyVersion}"><p hidden><label>Hagyd üresen: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p><label class="n-field"><span>Név (nem kötelező)</span><input type="text" name="name" autocomplete="name"></label><label class="n-field"><span>E-mail cím</span><input type="email" name="email" autocomplete="email" required></label><div class="n-consent"><input type="checkbox" id="kisokos-consent" name="privacy-consent" value="yes" required><label for="kisokos-consent">Elolvastam az <a class="policy" href="adatkezeles.html" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>, és hozzájárulok adataim legfeljebb 30 napos kezeléséhez az igénylés tesztelése céljából.</label></div><button class="button" type="submit">Kérem a teszt Kisokost</button><p class="form-status" role="status" aria-live="polite"></p></form>`);
+  }
   return html;
 }

@@ -3,6 +3,7 @@ import fs from 'node:fs';
 export const origin = 'https://eliza-study.netlify.app';
 const image = '/assets/images/arckezeles-vilagos-szalonban-fekvo-1200.webp';
 const pages = {
+  'kisokos-letoltes.html': ['Kisokos letöltése | Eliza Beauty Salon', 'Az Eliza tanulmányi tesztanyagának letöltése. Nem hírlevél-feliratkozás.'],
   'index.html': ['Kozmetikai arckezelések Budapesten | Eliza Beauty Salon', 'Személyre szabott arckezelések, bőrfiatalítás és hidratálás Sipos Eliza mesterkozmetikussal Budapesten, a Ráday utcában. Ismerd meg a kezeléseket és a szalont!'],
   'kezelesek.html': ['Belico és Mesotica arckezelések | Eliza Beauty Salon', 'Belico és Mesotica arckezelések, hidratálás és anti-akné programok Budapesten. Nézd meg a kezelések időtartamát, a csomagokat és válaszd ki a hozzád illő ápolást!'],
   'rolunk.html': ['Sipos Eliza mesterkozmetikus | Eliza Beauty Salon', 'Ismerd meg Sipos Eliza mesterkozmetikust, szakmai útját és értékeit. Személyes figyelem és nyugodt szalonkörnyezet Budapest Ráday utcájában. Nézz körül nálunk!'],
@@ -40,7 +41,7 @@ export function seoMarkup(html, file) {
   html = html.replace(/<!-- seo:start -->[\s\S]*?<!-- seo:end -->/g, '');
   const tags = [
     `<link rel="canonical" href="${url}">`,
-    `<meta name="robots" content="${file === 'adatkezeles.html' ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">`,
+    `<meta name="robots" content="${['adatkezeles.html','kisokos-letoltes.html'].includes(file) ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">`,
     ...Object.entries({'og:title':title,'og:description':description,'og:url':url,'og:type':'website','og:locale':'hu_HU','og:site_name':'Eliza Beauty Salon','og:image':origin+image,'og:image:alt':'Kozmetikai arckezelés világos szalonban'}).map(([k,v])=>`<meta property="${k}" content="${esc(v)}">`),
     '<meta name="twitter:card" content="summary_large_image">',
     `<meta name="twitter:title" content="${esc(title)}">`,
@@ -52,7 +53,7 @@ export function seoMarkup(html, file) {
 }
 
 export function writeDiscoveryFiles() {
-  const urls = Object.keys(pages).filter(file=>file!=='adatkezeles.html').map(file=>`  <url><loc>${urlFor(file)}</loc></url>`);
+  const urls = Object.keys(pages).filter(file=>!['adatkezeles.html','kisokos-letoltes.html'].includes(file)).map(file=>`  <url><loc>${urlFor(file)}</loc></url>`);
   fs.writeFileSync('public/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.join('\n')+'\n</urlset>\n');
   fs.writeFileSync('public/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 }
