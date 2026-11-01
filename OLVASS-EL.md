@@ -20,7 +20,15 @@ A kiválasztott és egyetlen aktív irány az 5. koncepció. A publikálható ol
 
 Közös arculat: eliza.css; működés: eliza.js. A Google Fonts betűihez internetkapcsolat szükséges. A menü oldalakat kapcsol össze; mobilon nyitható és Escape-pel bezárható. A csomagválasztás előtölti az időpontkérő üzenetét.
 
-Az űrlapok bemutatók, nem küldenek adatot. A Kisokos letöltése és a végleges adatkezelési tájékoztató későbbi feladat. A 62 eredeti kép változatlan. Az aktív oldalak 8 fényképe optimalizált WebP formátumot használ, reszponzív méretekkel (assets/images/). A logók megmaradnak éles, vektoros SVG formátumban.
+A Kapcsolat oldal űrlapja Netlify Forms bekötésére előkészített; helyi előnézetben nem küld adatot. A többi űrlap bemutató. A Kisokos letöltése és a végleges adatkezelési tájékoztató későbbi feladat. A 62 eredeti kép változatlan. Az aktív oldalak 8 fényképe optimalizált WebP formátumot használ, reszponzív méretekkel (assets/images/). A logók megmaradnak éles, vektoros SVG formátumban.
+
+## Kapcsolati űrlap bekötése
+
+A kapcsolat.html űrlap neve kapcsolat: natív POST-küldés, data-netlify jelölés, form-name rejtett mező és bot-field spamcsapda. Kötelező a név, e-mail, üzenet és a tájékoztató elolvasásának jelzése. Sikeres fogadás után a Netlify alapértelmezett visszaigazoló oldala jelenik meg.
+
+Bekötés: a Netlify projekt Forms paneljén Enable form detection, majd az új változat külön engedélyezett publikálása. Ezután ellenőrizd, hogy megjelent a kapcsolat nevű űrlap, és próbaüzenettel igazold a fogadást. E-mail-értesítés külön állítható be a Submission notifications résznél. A kód helyi ellenőrzése nem igazolja a Netlify-oldali kézbesítést. Valódi adatgyűjtés előtt a végleges adatkezelési tájékoztatót is ki kell tölteni.
+
+Dokumentáció: https://docs.netlify.com/manage/forms/setup/
 
 Korábbi koncepciók: koncepciok.html. Az eredeti három változat megmaradt; a 4. és 5. összehangolt főoldal is külön fájlban megtekinthető.
 
