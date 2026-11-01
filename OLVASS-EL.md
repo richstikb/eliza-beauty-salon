@@ -1,6 +1,16 @@
+## Mappák és publikálás
+
+- public/: kizárólag az aktuális oldal, aloldalak és a hivatkozott WebP/SVG eszközök. A hosting publish directory beállítása: public.
+- .webprojekt/: generátorok, képmanifest és ellenőrzések.
+- képek/, logo/, assets/: megőrzött eredetik és újraépítéshez szükséges eszközforrások.
+- koncepcio-*.html, koncepciok.html: megőrzött tervek, nem kerülnek publikálásra.
+- A gyökér Markdown-fájljai projektleírások és munkaanyagok.
+
+Újraépítés: node .webprojekt/build-selected.mjs. A generátor ellenőrzi a helyi hivatkozásokat és csak a használt eszközöket másolja a public mappába. A korábbi orchidea helyén a legújabb virágos női vonalrajz jelenik meg.
+
 # Eliza — Nyugodt gondoskodás
 
-A kiválasztott és egyetlen aktív irány az 5. koncepció. Nyisd meg az index.html fájlt böngészőben.
+A kiválasztott és egyetlen aktív irány az 5. koncepció. A publikálható oldal a public/index.html fájlból indul.
 
 - index.html: teljes főoldal.
 - kezelesek.html: kezelések, időtartamok, csomagok és csomagválasztás.

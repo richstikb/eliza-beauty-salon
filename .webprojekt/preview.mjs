@@ -1,7 +1,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-const root=process.cwd();
+const root=path.resolve('public');
 const mime={'.html':'text/html; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.css':'text/css','.js':'text/javascript'};
 http.createServer((req,res)=>{
   let file;
