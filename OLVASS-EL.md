@@ -37,3 +37,15 @@ Képoptimalizálás: .webprojekt/optimize-images.py (Pillow/WebP), majd node .we
 Újabb finomítás: visszafogott krém garanciablokk, körvonalas kezelési CTA-k; a Kezelések oldalon nincs űrlap, a rövid, púder folyamatleírás után a lábléc következik. A csomagválasztás a Kapcsolat oldal űrlapjába viszi a csomagnevet. Az értékek fejlécének dekorációja az eredeti noi-arc-vonalrajz-hajjal.png veszteségmentes WebP-másolata, a levélrajz eltávolítva.
 
 A Kezelések bevezetőjében asztali nézetben a korábban nem használt pumpas-kozmetikum-levelekkel-nagy.png optimalizált WebP-másolata tölti ki a jobb oldali teret. A Kapcsolat GYIK előtti elválasztó rövid, rombuszos lett. A főoldali és Belico-szövegek természetesebb megfogalmazást kaptak.
+
+## SEO / GEO / AEO – 2026. november 1.
+
+Az öt aktív oldal egyedi title, meta description, canonical, Open Graph és Twitter megosztási metaadatokat kapott. A domain https://eliza-study.netlify.app. Új domain esetén a .webprojekt/seo.mjs origin értékét kell módosítani, majd újraépíteni.
+
+A strukturált adatok a látható tartalomból származnak: BeautySalon + WebPage, a Rólunk oldalon Person/AboutPage, a Kapcsolat oldalon ContactPage és a négy látható kérdéssel pontosan egyező FAQPage. Az ismétlődő főoldali GYIK-et nem jelöljük másodszor. Nincsenek kitalált koordináták, közösségi profilok vagy értékelési pontszámok.
+
+A public/sitemap.xml négy tartalmi oldalt sorol fel. A befejezetlen adatkezelési oldal noindex, follow jelölést kapott, a sitemapből kimarad, de a robotok hozzáférhetnek. A robots.txt a sitemapre mutat. Az eredeti favicon, alt szövegek, egy H1/oldal és reszponzív WebP-k megmaradtak. A body tartalma minden oldalon bájtra egyezik az előző commitéval.
+
+Ellenőrzés: a vikingo-seo ellenőrzője 17 hibáról 0 hibára javult. JSON-LD gráfok, egyedi azonosítók, duplikációmentes metaadatok, pontos GYIK-szövegegyezés és helyi böngészős megjelenés ellenőrizve. Egyetlen figyelmeztetés: nincs HTML-ben látható Search Console-hitelesítés; DNS-hitelesítés ettől még lehetséges.
+
+A változás nincs automatikusan élesítve. Külön publikálás után javasolt a sitemap beküldése Search Console-ba, Schema Markup Validator / Rich Results Test és PageSpeed mérés. A projekt fiktív tanulmányi feladat: valódi Google Business Profile regisztrációt nem végzünk. A strukturált adatok nem garantálnak Google-helyezést, FAQ-kiemelést vagy AI-válaszokba kerülést.
