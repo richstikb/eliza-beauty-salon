@@ -21,7 +21,7 @@ A kiválasztott és egyetlen aktív irány az 5. koncepció. A publikálható ol
 
 Közös arculat: eliza.css; működés: eliza.js. A Google Fonts betűihez internetkapcsolat szükséges. A menü oldalakat kapcsol össze; mobilon nyitható és Escape-pel bezárható. A csomagválasztás előtölti az időpontkérő üzenetét.
 
-A Kapcsolat oldal űrlapja Netlify Forms bekötésére előkészített; helyi előnézetben nem küld adatot. A főoldali Kisokos-űrlap szintén Netlify Forms bekötésére előkészített, a többi űrlap bemutató. A Kisokos tanulmányi tesztfájl, nem hírlevél vagy automatikus e-mail. Az adatkezelési oldal tanulmányi minta, nem valódi szalon teljes jogi dokumentuma. A 62 eredeti kép változatlan. Az aktív oldalak 8 fényképe optimalizált WebP formátumot használ, reszponzív méretekkel (assets/images/). A logók megmaradnak éles, vektoros SVG formátumban.
+A Kapcsolat oldal űrlapja Netlify Forms bekötésére előkészített; helyi előnézetben nem küld adatot. A főoldali Kisokos-űrlap szintén Netlify Forms bekötésére előkészített, a főoldali és Rólunk oldali kapcsolati űrlap is ugyanezt a bekötést használja. A Kisokos tanulmányi tesztfájl, nem hírlevél vagy automatikus e-mail. Az adatkezelési oldal tanulmányi minta, nem valódi szalon teljes jogi dokumentuma. A 62 eredeti kép változatlan. Az aktív oldalak 8 fényképe optimalizált WebP formátumot használ, reszponzív méretekkel (assets/images/). A logók megmaradnak éles, vektoros SVG formátumban.
 
 ## Kapcsolati űrlap bekötése
 
@@ -71,6 +71,10 @@ A tájékoztató forrása .webprojekt/privacy-content.mjs, az űrlapkezelésé .
 
 ## Űrlapjavítás – 2026. november 2.
 
-A Netlify az éles HTML-ből eltávolítja a data-netlify attribútumot. A JavaScript ezért most az űrlap nevét és a megmaradó rejtett form-name értékét ellenőrzi; a korábbi feltétel tévesen megállította az éles POST-küldést. Regressziós ellenőrzés: node .webprojekt/check-forms.mjs. A főoldali és Rólunk oldali időpontkérők továbbra is bemutatók; működő üzenetküldés a Kapcsolat oldalon van.
+A Netlify az éles HTML-ből eltávolítja a data-netlify attribútumot. A JavaScript ezért most az űrlap nevét és a megmaradó rejtett form-name értékét ellenőrzi; a korábbi feltétel tévesen megállította az éles POST-küldést. Regressziós ellenőrzés: node .webprojekt/check-forms.mjs. A főoldali, Rólunk oldali és Kapcsolat oldali üzenetküldő egységesen a kapcsolat nevű Netlify-űrlapot használja.
 
 A Netlify kapcsolat űrlapjához beállított e-mail-értesítés: alt.boglarka@gmail.com. A mentett beállítás ellenőrizve; postaládába érkezés még nincs igazolva. A Kisokoshoz nem állítottunk be e-mail-értesítést.
+
+## Kapcsolati űrlap minden oldalon – 2026. november 2.
+
+A főoldali és Rólunk oldali űrlap azonos névvel, mezőkkel, hozzájárulással és spamcsapdával csatlakozik a már működő kapcsolat Netlify-űrlaphoz. Így a meglévő alt.boglarka@gmail.com értesítés vonatkozik rájuk is. Az adatkezelési tájékoztató frissítve (2026-11-02). A generált három űrlap mezőegyezését és a küldési útvonalat a check-forms.mjs ellenőrzi. Ez a változás külön élesítést igényel.

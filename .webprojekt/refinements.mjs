@@ -27,14 +27,16 @@ export function refinePage(html, file) {
     html = html.replace('class="section wrap values-section"><div class="section-lead">', 'class="section wrap values-section"><div class="values-heading"><img class="values-line-art" src="assets/images/noi-arc-vonalrajz-hajjal.webp" width="197" height="252" alt="" aria-hidden="true" loading="lazy"><div class="section-lead">');
     html = html.replace('Ezekből épül fel minden találkozásunk.</p></div><div class="value-grid">', 'Ezekből épül fel minden találkozásunk.</p></div></div><div class="value-grid">');
   }
-  if (file === 'kapcsolat.html') {
+  if (['index.html', 'rolunk.html', 'kapcsolat.html'].includes(file)) {
     html = html.replace('<form data-kind="booking">', '<form data-kind="booking" name="kapcsolat" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="kapcsolat"><p hidden><label>Hagyd üresen ezt a mezőt: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>');
     html = html.replace('id="booking-consent" type="checkbox" required', 'id="booking-consent" type="checkbox" name="privacy-acknowledged" value="yes" required');
     html = html.replace('<button class="button" type="submit">Időpontot kérek</button>', '<button class="button" type="submit">Üzenet küldése</button>');
+  }
+  if (file === 'kapcsolat.html') {
     html = html.replace('</main>', `<section class="section location-section" aria-labelledby="location-title"><div class="wrap location-grid"><div class="location-copy"><p class="kicker">Itt találkozunk</p><h2 id="location-title">Egy kis nyugalom<br>a város szívében.</h2><p class="location-address">Eliza Beauty Salon<br><strong>1092 Budapest, Ráday u. 1.</strong></p><p>Hétfőtől péntekig 9:00–16:00.<br>Kizárólag előre egyeztetett időpontban.</p><a class="button secondary" href="https://www.google.com/maps/dir/?api=1&amp;destination=1092+Budapest,+R%C3%A1day+utca+1" target="_blank" rel="noopener noreferrer">Útvonaltervezés</a></div><div class="map-frame"><iframe title="A szalon címe a térképen: Budapest, Ráday utca 1." src="https://maps.google.com/maps?q=1092%20Budapest%20R%C3%A1day%20utca%201&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><p>1092 Budapest, Ráday u. 1. <span>Előre egyeztetett időpontban várlak.</span></p></div></div></section></main>`);
   }
   if (file === 'adatkezeles.html') html = html.replace('<h2>Az élesítés előtt elkészítendő</h2>', '<h2>Térkép</h2><p>A Kapcsolat oldalon Google Maps térkép segíti a tájékozódást. A térkép betöltésekor a böngésző kapcsolatot létesít a Google szolgáltatásával.</p><h2>Az élesítés előtt elkészítendő</h2>');
-  if (file === 'kapcsolat.html') {
+  if (['index.html', 'rolunk.html', 'kapcsolat.html'].includes(file)) {
     html = html.replace('name="privacy-acknowledged"', 'name="privacy-consent"');
     html = html.replace('Elolvastam az <a class="policy" href="adatkezeles.html">adatkezelési tájékoztatót</a>.', 'Elolvastam az <a class="policy" href="adatkezeles.html" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>, és hozzájárulok adataim kezeléséhez a tesztmegkeresés fogadása és megválaszolása céljából, legfeljebb 30 napig.');
     html = html.replace('<form data-kind="booking"', '<p class="form-context">Tanulmányi tesztűrlap, nem valódi időpontfoglalás. Ne adj meg egészségügyi adatot.</p><form data-kind="booking"');

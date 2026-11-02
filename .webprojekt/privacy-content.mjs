@@ -1,7 +1,7 @@
 // A kurzushoz kapott Word-minta alapján, kizárólag a projekt valós funkcióival.
-export const privacyVersion = '2026-11-01';
+export const privacyVersion = '2026-11-02';
 export const privacyContent = `<article class="document privacy-document">
-<p class="kicker">Tanulmányi projekt · 2026. november 1.</p>
+<p class="kicker">Tanulmányi projekt · 2026. november 2.</p>
 <h1>Adatkezelési tájékoztató</h1>
 <div class="draft-note"><p><strong>Az Eliza Beauty Salon fiktív házi feladat.</strong> Sipos Eliza és a bemutatott szalon a tanulmányi példa része. Az oldal nem fogad valódi kozmetikai időpontfoglalást. A működő tesztűrlapok azonban adatot továbbítanak: csak tesztelés céljából használd őket, és ne írj be egészségügyi vagy más érzékeny adatot.</p></div>
 <nav class="privacy-toc" aria-label="A tájékoztató tartalma"><a href="#uzemelteto">Kapcsolattartás</a><a href="#urlapadatok">Űrlapok és megőrzés</a><a href="#szolgaltatok">Külső szolgáltatók</a><a href="#jogok">Adataiddal kapcsolatos jogaid</a></nav>
@@ -10,10 +10,10 @@ export const privacyContent = `<article class="document privacy-document">
 <p>A projekt webcíme: <a href="https://eliza-study.netlify.app/">eliza-study.netlify.app</a>. A szalonhoz megadott cím, telefonszám és hello.elizabeauty@gmail.com cím látványelem; adatvédelmi megkeresést a fenti, valóban elérhető címre küldj. A tanulmányi mintában nincs megadott vállalkozás, adószám vagy cégjegyzékszám. Ez a tájékoztató nem egy működő szalon teljes körű adatvédelmi dokumentuma.</p>
 <h2 id="urlapadatok">2. Milyen adatokat kezelünk?</h2>
 <h3>Kapcsolati tesztűrlap</h3>
-<p>A Kapcsolat oldalon megadott nevet, e-mail-címet, üzenetet, hozzájárulásod jelzését és a tájékoztató verzióját a Netlify Forms fogadja. A cél a kapcsolatfelvétel kipróbálása és szükség esetén a tesztmegkeresés megválaszolása. A beküldés nem időpontfoglalás.</p>
+<p>A főoldalon, a Rólunk és a Kapcsolat oldalon megadott nevet, e-mail-címet, üzenetet, hozzájárulásod jelzését és a tájékoztató verzióját a Netlify Forms fogadja. A cél a kapcsolatfelvétel kipróbálása és szükség esetén a tesztmegkeresés megválaszolása. A beküldés nem időpontfoglalás.</p>
 <h3>Kisokos igénylése</h3>
 <p>Az e-mail-címet, az opcionálisan megadott nevet, hozzájárulásod jelzését és a tájékoztató verzióját kizárólag az igénylési folyamat teszteléséhez kezeljük. A Kisokos a beküldés után a böngészőben letölthető szövegfájl. Nem küldünk automatikus e-mailt, nem indítunk hírlevelet, és nem készül marketinglista.</p>
-<p>Mindkét tesztűrlap adatkezelése az önkéntes hozzájárulásodon alapul (GDPR 6. cikk (1) bekezdés a) pont). A jelölőnégyzet nincs előre bepipálva. Ha nem járulsz hozzá, az űrlapot nem küldjük el; az oldalak továbbra is böngészhetők. A főoldali és Rólunk oldali időpontkérő űrlapok továbbra is bemutatók, nem továbbítanak adatot.</p>
+<p>Mindkét tesztűrlap adatkezelése az önkéntes hozzájárulásodon alapul (GDPR 6. cikk (1) bekezdés a) pont). A jelölőnégyzet nincs előre bepipálva. Ha nem járulsz hozzá, az űrlapot nem küldjük el; az oldalak továbbra is böngészhetők. A főoldali, Rólunk oldali és Kapcsolat oldali üzenetküldők ugyanabba a kapcsolati űrlapba továbbítják az adatokat.</p>
 <h2>3. Meddig maradnak meg a tesztadatok?</h2>
 <p>A beküldött tesztadatok megőrzési ideje a beküldéstől számított legfeljebb <strong>30 nap</strong>, illetve a hozzájárulás korábbi visszavonásáig. A projektkészítő kézzel törli a beérkezett adatokat a Netlify Forms felületéről és az esetlegesen készített helyi vagy e-mailes másolatokból. Az oldal nem tartalmaz automatikus törlési rendszert. A szolgáltatók saját technikai naplóira és biztonsági mentéseire külön szabályok vonatkozhatnak.</p>
 <h2 id="szolgaltatok">4. Tárhely és külső szolgáltatások</h2>
