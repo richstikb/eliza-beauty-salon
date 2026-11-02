@@ -2,10 +2,15 @@ const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('
 document.querySelectorAll('form').forEach(form => {
   form.addEventListener('submit', event => {
     const local = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) || location.protocol === 'file:';
-    if (form.hasAttribute('data-netlify') && !local) return;
+    // Netlify removes data-netlify during HTML processing. The form name and
+    // hidden form-name field survive deployment and identify enabled forms.
+    const name = form.getAttribute('name');
+    const enabled = ['kapcsolat', 'kisokos'].includes(name)
+      && form.querySelector('input[name="form-name"]')?.value === name;
+    if (enabled && !local) return;
     event.preventDefault();
     const status = form.querySelector('.form-status');
-    status.textContent = form.hasAttribute('data-netlify')
+    status.textContent = enabled
       ? 'Helyi előnézet: nem küldtünk adatot. A beküldés a Netlify Forms aktiválása és a publikálás után működik.'
       : 'Ez bemutató űrlap, nem küldtünk adatot. Tesztüzenetet a Kapcsolat oldalon küldhetsz.';
     if (form.getAttribute('name') === 'kisokos') {

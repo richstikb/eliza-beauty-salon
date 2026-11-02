@@ -68,3 +68,9 @@ A 30 napos megőrzés a kapcsolati és a Kisokos-tesztadatokra is vonatkozik. A 
 Publikálás után ellenőrizendő: Forms-felismerés aktív; kapcsolat és kisokos megjelenik a Forms panelen; mindkét próbabeküldés valóban beérkezik; a Kisokos-küldés a letöltési oldalra vezet. A helyi ellenőrzés ezt nem helyettesíti. Az e-mail-cím szöveges megadása nem állít be Netlify-értesítést. A változtatás önmagában nem indít éles publikálást.
 
 A tájékoztató forrása .webprojekt/privacy-content.mjs, az űrlapkezelésé .webprojekt/forms.js és .webprojekt/refinements.mjs. Az eredeti Word-fájl változatlan. A footerlinkek minden oldalon ellenőrizve; adatkezeles.html és kisokos-letoltes.html noindex, a sitemapben nem szerepelnek.
+
+## Űrlapjavítás – 2026. november 2.
+
+A Netlify az éles HTML-ből eltávolítja a data-netlify attribútumot. A JavaScript ezért most az űrlap nevét és a megmaradó rejtett form-name értékét ellenőrzi; a korábbi feltétel tévesen megállította az éles POST-küldést. Regressziós ellenőrzés: node .webprojekt/check-forms.mjs. A főoldali és Rólunk oldali időpontkérők továbbra is bemutatók; működő üzenetküldés a Kapcsolat oldalon van.
+
+A Netlify kapcsolat űrlapjához beállított e-mail-értesítés: alt.boglarka@gmail.com. A mentett beállítás ellenőrizve; postaládába érkezés még nincs igazolva. A Kisokoshoz nem állítottunk be e-mail-értesítést.
